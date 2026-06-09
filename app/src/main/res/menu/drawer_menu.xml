@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Accueil" />
+        <item
             android:id="@+id/nav_bmi"
             android:icon="@drawable/ic_bmi"
             android:title="Mon IMC" />
@@ -13,5 +17,9 @@
             android:id="@+id/nav_math"
             android:icon="@drawable/ic_math"
             android:title="Multiplication" />
+        <item
+            android:id="@+id/nav_quit"
+            android:icon="@drawable/ic_exit"
+            android:title="Quitter" />
     </group>
 </menu>
