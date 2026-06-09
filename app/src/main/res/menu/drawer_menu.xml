@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bmi"
+            android:icon="@drawable/ic_bmi"
+            android:title="Calcule IMC" />
+        <item
+            android:id="@+id/nav_money"
+            android:icon="@drawable/ic_money"
+            android:title="Conversion MONEY" />
+        <item
+            android:id="@+id/nav_math"
+            android:icon="@drawable/ic_math"
+            android:title="Table de multiplication" />
+    </group>
+</menu>

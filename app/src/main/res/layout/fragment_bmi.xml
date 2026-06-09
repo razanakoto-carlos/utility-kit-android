@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2F2F0">
+
+    <!-- ── TITRE PAGE ── -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mon IMC"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bonne santé, c'est simple."
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="20dp" />
+    <!-- ── TITRE SECTION ── -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vos mesures"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:layout_marginBottom="10dp" />
+
+    <!-- ── CARTE INPUTS ── -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <!-- Ligne Poids -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="⚖️"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/icon_bg_round"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Poids"
+                    android:textSize="14sp"
+                    android:textColor="#999999" />
+
+                <EditText
+                    android:id="@+id/edit_poids"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="70"
+                    android:inputType="numberDecimal"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#111111"
+                    android:textColorHint="#DDDDDD"
+                    android:gravity="end"
+                    android:background="@null"
+                    android:imeOptions="actionNext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" kg"
+                    android:textSize="13sp"
+                    android:textColor="#BBBBBB" />
+            </LinearLayout>
+
+            <!-- Séparateur -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0F0F0" />
+
+            <!-- Ligne Taille -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="📏"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/icon_bg_round"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Taille"
+                    android:textSize="14sp"
+                    android:textColor="#999999" />
+
+                <EditText
+                    android:id="@+id/edit_taille"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="175"
+                    android:inputType="numberDecimal"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#111111"
+                    android:textColorHint="#DDDDDD"
+                    android:gravity="end"
+                    android:background="@null"
+                    android:imeOptions="actionDone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" cm"
+                    android:textSize="13sp"
+                    android:textColor="#BBBBBB" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── BOUTON CALCULER ── -->
+    <Button
+        android:id="@+id/btn_calc_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Calculer mon IMC"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#111111"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
